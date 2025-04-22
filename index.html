@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narinder Singh | DevOps & Cloud Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Enhanced Back to Top Button with Progress -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-rocket"></i>
+        <svg class="progress-circle" width="50" height="50" viewBox="0 0 50 50">
+            <circle class="progress-track" cx="25" cy="25" r="22"/>
+            <circle class="progress-fill" cx="25" cy="25" r="22"/>
+        </svg>
+    </button>
+
+    <!-- Dark/Light Mode Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Animation -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-animate="fade-right">
+            <h1 class="hero-title">Narinder Singh</h1>
+            <h2 class="hero-subtitle">DevOps & Cloud Engineer</h2>
+            <p class="hero-text">Building scalable, resilient cloud infrastructure with a passion for automation and CI/CD pipelines.</p>
+            <a href="assets/downloads/Narinder_Singh_Resume.pdf" download="Narinder_Singh_Resume.pdf" class="btn btn-primary">
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
+        <div class="hero-image" data-animate="fade-left" class="delay-1">
+            <img src="assets/img/avatar.jpg" alt="Narinder Singh">
+        </div>
+    </section>
+
+    <!-- About Section with Animation -->
+    <section id="about" class="section about">
+        <h2 class="section-title" data-animate="fade-down">About Me</h2>
+        <div class="about-content">
+            <div class="about-text" data-animate="fade-up">
+                <p>I'm a passionate DevOps Engineer with experience in designing and implementing cloud-native solutions. Starting as an intern, I've grown into a full-time professional specializing in automation, infrastructure as code, and cloud technologies.</p>
+                <p>My journey has taken me through various roles where I've implemented CI/CD pipelines, containerized applications, and managed Kubernetes clusters at scale.</p>
+            </div>
+            <div class="tech-badges" data-animate="fade-up" class="delay-1">
+                <div class="badge">AWS</div>
+                <div class="badge">Docker</div>
+                <div class="badge">Kubernetes</div>
+                <div class="badge">Jenkins</div>
+                <div class="badge">Terraform</div>
+                <div class="badge">Prometheus</div>
+            </div>
+        </div>
+    </section>
+
+<!-- Projects Section -->
+<section id="projects" class="section projects">
+    <h2 class="section-title" data-animate="fade-down">Projects</h2>
+    <div class="projects-grid">
+        <!-- Project 1: Terraform AWS -->
+        <div class="project-card" data-animate="fade-up">
+            <div class="project-image">
+                <img src="assets/img/projects/terraform-aws.jpg" 
+                     alt="Terraform AWS Infrastructure" 
+                     loading="lazy">
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">AWS Infrastructure as Code</h3>
+                <div class="project-tools">
+                    <span>Terraform</span>
+                    <span>AWS</span>
+                    <span>GitHub Actions</span>
+                </div>
+                <p class="project-description">
+                    Production-grade AWS infrastructure with VPC, EC2, and RDS modules using Terraform.
+                    Implemented automated validation checks and multi-environment deployment workflows.
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/terraform-aws-modules" 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-primary">
+                       <i class="fab fa-github"></i> View Code
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: Kubernetes Cluster -->
+        <div class="project-card" data-animate="fade-up" class="delay-1">
+            <div class="project-image">
+                <img src="assets/img/projects/k8s-cluster.jpg" 
+                     alt="Kubernetes Cluster" 
+                     loading="lazy">
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">Kubernetes Cluster Automation</h3>
+                <div class="project-tools">
+                    <span>Ansible</span>
+                    <span>Kubernetes</span>
+                    <span>Prometheus</span>
+                </div>
+                <p class="project-description">
+                    Bare-metal Kubernetes cluster provisioning with monitoring stack using Ansible.
+                    Configured persistent storage, ingress controllers, and RBAC policies.
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/k8s-automation" 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-primary">
+                       <i class="fab fa-github"></i> Source Code
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3: CI/CD Pipeline -->
+        <div class="project-card" data-animate="fade-up" class="delay-2">
+            <div class="project-image">
+                <img src="assets/img/projects/cicd-pipeline.jpg" 
+                     alt="CI/CD Pipeline" 
+                     loading="lazy">
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">GitHub Actions CI/CD</h3>
+                <div class="project-tools">
+                    <span>GitHub Actions</span>
+                    <span>Docker</span>
+                    <span>SonarQube</span>
+                </div>
+                <p class="project-description">
+                    End-to-end CI/CD pipeline with automated testing, security scanning, and deployment.
+                    Reduced deployment time by 70% through parallel workflow optimization.
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/cicd-pipeline" 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-primary">
+                       <i class="fab fa-github"></i> Code Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section with Grid Animations -->
+    <section id="skills" class="section skills">
+        <h2 class="section-title" data-animate="fade-down">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item" data-animate="zoom">
+                <img src="assets/img/skills/aws.svg" alt="AWS">
+                <span>AWS</span>
+            </div>
+            <div class="skill-item" data-animate="zoom" class="delay-1">
+                <img src="assets/img/skills/kubernetes.svg" alt="Kubernetes">
+                <span>Kubernetes</span>
+            </div>
+            <div class="skill-item" data-animate="zoom" class="delay-2">
+                <img src="assets/img/skills/terraform.svg" alt="Terraform">
+                <span>Terraform</span>
+            </div>
+            <div class="skill-item" data-animate="zoom" class="delay-3">
+                <img src="assets/img/skills/jenkins.svg" alt="Jenkins">
+                <span>Jenkins</span>
+            </div>
+            <div class="skill-item" data-animate="zoom" class="delay-1">
+                <img src="assets/img/skills/git.svg" alt="Git">
+                <span>Git</span>
+            </div>
+            <div class="skill-item" data-animate="zoom" class="delay-2">
+                <img src="assets/img/skills/linux.svg" alt="Linux">
+                <span>Linux</span>
+            </div>
+            <div class="skill-item" data-animate="zoom" class="delay-3">
+                <img src="assets/img/skills/docker.svg" alt="Docker">
+                <span>Docker</span>
+            </div>
+            <div class="skill-item" data-animate="zoom" class="delay-1">
+                <img src="assets/img/skills/ansible.svg" alt="Ansible">
+                <span>Ansible</span>
+            </div>
+            <div class="skill-item" data-animate="zoom" class="delay-2">
+                <img src="assets/img/skills/prometheus.svg" alt="Prometheus">
+                <span>Prometheus</span>
+            </div>
+            <div class="skill-item" data-animate="zoom" class="delay-3">
+                <img src="assets/img/skills/cicd.svg" alt="CI/CD">
+                <span>CI/CD</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Animation -->
+    <section id="contact" class="section contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <p class="contact-text">Let's connect! I'm always open to discussing new opportunities.</p>
+            <div class="contact-info">
+                <a href="mailto:narinderclouds@gmail.com" class="contact-email">
+                    <i class="fas fa-envelope"></i> narinderclouds@gmail.com
+                </a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/narinder-singh-485249236" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="LinkedIn"
+                       class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Narinder-clouds/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="GitHub"
+                       class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/yourhandle"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Twitter"
+                       class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Narinder Singh. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    
+    <!-- Animation Observer Script -->
+    <script>
+    // Intersection Observer for Animations
+    document.addEventListener('DOMContentLoaded', function() {
+        const animateElements = document.querySelectorAll('[data-animate]');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        animateElements.forEach(element => {
+            observer.observe(element);
+        });
+
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    });
+    </script>
+</body>
+</html>
